@@ -653,7 +653,7 @@ p {
 @media (max-width: 768px) {
 
   .hero {
-    min-height: 85vh;
+    min-height: 62vh;
     text-align: center;
   }
 
@@ -682,7 +682,7 @@ p {
 @media (max-width: 480px) {
 
   .hero {
-    min-height: 80vh;
+    min-height: 72vh;
   }
 
   .hero h1 {
@@ -860,12 +860,6 @@ p {
     text-align: center;
   }
 
-  .story-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    max-width: 100%;
-  }
-
   .story-text p {
     font-size: 1rem;
     line-height: 1.7;
@@ -886,10 +880,6 @@ p {
 
   .section-title.visible {
     transform: translateY(0);
-  }
-
-  .story-content {
-    gap: 30px;
   }
 
   .story-text {
@@ -932,10 +922,6 @@ p {
     width: 60px; /* Smaller underline on mobile */
   }
 
-  .story-content {
-    gap: 25px;
-  }
-
   .story-text p {
     font-size: 0.9rem;
     line-height: 1.6;
@@ -947,7 +933,39 @@ p {
     right: 3px;
   }
 }
+/* Tablets and Small Desktops */
+@media (max-width: 968px) {
+    .story-content {
+        max-width: 100%;
+        gap: 50px;
+        padding: 0 20px;
+    }
+}
 
+/* Tablets */
+@media (max-width: 768px) {
+    .story-content {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 40px;
+        padding: 0 15px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+    .story-content {
+        gap: 30px;
+        padding: 0 12px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+    .story-content {
+        gap: 25px;
+        padding: 0 10px;
+    }
+}
        
 /* practice section */
 /* Section */
@@ -2114,11 +2132,7 @@ button:hover{
     gap: 30px;
   }
 
-  .contact-form,
-  .contact-info {
-    padding: 28px 24px;
-    border-radius: 16px;
-  }
+  
 
   .contact-form h3,
   .contact-info h3 {
@@ -2217,13 +2231,6 @@ button:hover{
     gap: 25px;
   }
 
-  .contact-form,
-  .contact-info {
-    padding: 24px 18px;
-    border-radius: 14px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-  }
-
   .contact-form h3,
   .contact-info h3 {
     font-size: 24px;
@@ -2298,7 +2305,23 @@ button:hover{
     font-size: 13px;
   }
 }
+@media (max-width: 768px) {
+  .contact-form,
+  .contact-info {
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.06);
+  }
+}
 
+@media (max-width: 480px) {
+  .contact-form,
+  .contact-info {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,.05);
+  }
+}
 /* Extra small devices */
 @media (max-width: 360px) {
   .contact-section {
